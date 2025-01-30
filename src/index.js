@@ -6,6 +6,10 @@ app.get("/", (req, res) => {
   res.send("Hello from Express in a homelab!");
 });
 
+app.get("/api/test", (req, res) => {
+  res.json({ message: "API is working!" });
+});
+
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
